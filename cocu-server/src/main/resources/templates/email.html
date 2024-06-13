@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <title>邮箱验证</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<!-- 头部 -->
+<div style="padding: 10px; background-color: #393D49;">
+  <h2 style="color: #FFFFFF; margin: 0px;"></h2>
+</div>
+<!-- 内容 -->
+<div style="padding-top: 10px; padding-bottom: 10px;">
+  <div style="background-color: snow; padding: 20px;">
+    <div>
+      <h3>Hello, Dear User, welcome to COCU！</h3>
+      <p>To protect your personal data, the email verification process is important. We truly appreciate your cooperation.</p>
+      <p th:text="${message}"></p>
+      <div>
+        <h4>Email Verification Code is: </h4>
+        <div style="background-color: #EBEEF5; padding: 10px;">
+          <h3 th:text="${code}"></h3>
+        </div>
+        <h4>Please use it ASAP. Thank you.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 页底 -->
+<div style="padding: 10px; text-align: center; background-color: #2F4056;">
+  <p style="margin: 0px; color: #FFFFFF;"></p>
+</div>
+
+</body>
+</html>
